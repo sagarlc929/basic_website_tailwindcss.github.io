@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind CSS Example</title>
+        <!-- Tailwind CSS CDN Link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class=" flex justify-center items-center bg-slate-300 min-h-screen p-2 " >
+        <main id="home" class="w-full lg:max-w-screen-lg bg-slate-50 p-2 rounded-lg ">
+            <header class="flex justify-between p-2 flex-col sm:flex-row">
+                <div class="flex flex-row items-center justify-center  ">
+                    <img src="./assets/logo.png"
+                        class="rounded-full w-[4rem]"
+                        alt="logo">
+                    <p class="font-bold text-4xl px-2">Summer</p>
+                </div>
+                <nav class="flex flex-col items-center font-semibold gap-2 sm:flex-row ">
+                    <a class="hover:text-blue-900" href="#home">Home</a>
+                    <a class="hover:text-blue-900" href="#projects">Projects</a>
+                    <a class="hover:text-blue-900" href="#article">Article</a>
+                    <a class="hover:text-blue-900" href="#contact">Contact</a>
+                </nav>
+            </header>
+            <section class="flex flex-col justify-center items-center bg-slate-300 rounded h-[50vh] py-2">
+                <h1 class="font-bold text-4xl py-2"> Frontend Developer</h1>
+                <p class="py-2">html only with proper layout, with styling</p>
+            </section>
+            <section class="grid lg:grid-cols-3 py-2 gap-2 md:grid-cols-2 sm:grid-cols-1 ">
+                <div id="projects" class="bg-slate-300 rounded p-2">
+                    <h2 class="text-center font-semibold text-xl rounded p-1">Projects</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-slate-50 rounded p-1">HTML Only Profile</div>
+                        <div class="bg-slate-50 rounded p-1">Calculator</div>
+                        <div class="bg-slate-50 rounded p-1">Quiz App</div>
+                        <div class="bg-slate-50 rounded p-1">Countdown Timer</div>
+                        <div class="bg-slate-50 rounded p-1">Product Upcoming Page</div>
+                    </div>
+                </div>
+                <div  class="bg-slate-300 rounded p-2">
+                    <h2 class="text-center font-semibold text-xl rounded p-1">Work Experience</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-slate-50 rounded p-1">
+                            <p class="font-semibold text-xl">roadmap.sh</p>
+                            <p>Solved all the frontend projects</p>
+                            <a class="text-blue-500" href="google.com">View my Profile</a>
+                        </div>
+                        <div class="bg-slate-50 rounded p-1">
+                            <p class="font-semibold text-xl">OpenSource Work</p>
+                            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                            <a class="text-blue-500" href="google.com">View my GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-300 rounded p-2">
+                    <h2 class="text-center font-semibold text-xl rounded p-1">Education</h2>
+                    <div class="bg-slate-50 rounded p-1">
+                        <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                        <p class="py-1">Course I took:</p>
+                        <ul class="list-disc pl-4">
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Computer Graphics</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <section class="bg-slate-300 rounded p-2 ">
+                <h2 class="font-semibold text-2xl rounded p-1">Reviews from my Teachers</h2>
+                <div class="grid lg:grid-cols-3 py-2 gap-2  md:grid-cols-2 sm:grid-cols-1">
+                    <div class="rounded  bg-slate-50 p-1">
+                        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                        <p class="text-blue-600 font-semibold text-xl">Jan Doe</p>
+                        <p class="text-blue-500 ">Assistant Professor</p>
+                    </div>
+                    <div class="rounded bg-slate-50 p-1">
+                        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                        <p class="text-blue-600 font-semibold text-xl">Jan Doe</p>
+                        <p class="text-blue-500 ">Assistant Professor</p>
+                    </div>
+                    <div class="rounded bg-slate-50 p-1">
+                        <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                        <p class="text-blue-600 font-semibold text-xl">Jan Doe</p>
+                        <p class="text-blue-500 ">Assistant Professor</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="pt-2">
+                <p class="text-center">&copy; all rights reserved 2025</p>
+            </footer>
+        </main>
+    </body>
+</html>
